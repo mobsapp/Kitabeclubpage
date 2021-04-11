@@ -2987,8 +2987,3 @@ max-width:25%;
 
 }
 
-#meetgallery .carousel-item img {
-        width: auto !important;
-        height: auto;
-        max-height: 820px;
-    }
