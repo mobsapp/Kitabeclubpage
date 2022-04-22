@@ -54,7 +54,7 @@ a, a:hover {
 
 .mbr-text {
   font-style: normal;
-  line-height: 1.7;
+  line-height: 1.2;
 }
 
 h1,
@@ -70,6 +70,7 @@ h6,
 .display-5,
 .display-7,
 .display-6,
+.display-8,
 span,
 p,
 a {
@@ -379,12 +380,12 @@ nav .mbr-section-btn {
 /*! Scroll to top arrow */
 .mbr-arrow-up {
   bottom: 25px;
-  right: 90px;
+  right: 10px;
   position: fixed;
   text-align: right;
   z-index: 5000;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .mbr-arrow-up a {
@@ -392,8 +393,8 @@ nav .mbr-section-btn {
   border-radius: 50%;
   color: #fff;
   display: inline-block;
-  height: 60px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
   border: 2px solid #fff;
   outline-style: none !important;
   position: relative;
@@ -403,7 +404,7 @@ nav .mbr-section-btn {
   text-align: center;
 }
 .mbr-arrow-up a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 1, 0, 0.4);
 }
 .mbr-arrow-up a i {
   line-height: 60px;
@@ -427,6 +428,24 @@ nav .mbr-section-btn {
   transform: rotate(-90deg);
 }
 
+.mbr-arrow-down-icon {
+  display: block;
+  color: #fff;
+}
+
+.mbr-arrow-down-icon::before {
+  content: "›";
+  display: inline-block;
+  font-family: serif;
+  font-size: 22px;
+  line-height: 1;
+  font-style: normal;
+  position: relative;
+  top: 6px;
+  left: -4px;
+  transform: rotate(90deg);
+}
+.adown{}
 /*! Arrow Down */
 .mbr-arrow {
   position: absolute;
@@ -459,7 +478,7 @@ nav .mbr-section-btn {
   font-size: 2rem;
 }
 
-#scrollToTop a i::before {
+#scrollToTop .up::before {
   content: "";
   position: absolute;
   display: block;
@@ -470,6 +489,18 @@ nav .mbr-section-btn {
   left: 50%;
   top: 51%;
   transform: translateY(-30%) translateX(-50%) rotate(135deg);
+}
+#scrollToTop .down::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-bottom: 2.5px solid #fff;
+  border-left: 2.5px solid #fff;
+  width: 27.8%;
+  height: 27.8%;
+  left: 50%;
+  top: 40%;
+  transform: translateY(-30%) translateX(-50%) rotate(-45deg);
 }
 
 @keyframes arrowdown {
@@ -496,10 +527,25 @@ nav .mbr-section-btn {
 }
 @media (max-width: 500px) {
   .mbr-arrow-up {
-  width:60px;
-    left: 0;
-    right: 0;
-    text-align: right;
+  width:35px;
+    left: 5px;
+
+  }
+
+  .mbr-arrow-up a {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    border: 2px solid #fff;
+    outline-style: none !important;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
   }
 }
 /*Gradients animation*/
