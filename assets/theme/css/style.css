@@ -717,7 +717,7 @@ input[type=range] {
 
 .modal-dialog,
 .modal-content {
-  height: 100%;
+  height: fit-content;
 }
 
 .modal-dialog .carousel-inner {
@@ -816,10 +816,10 @@ body {
 }
 
 .alert {
-  color: #ffffff;
+  color: #080707;
   border-radius: 0;
   border: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1.875rem;
   padding: 1.25rem;

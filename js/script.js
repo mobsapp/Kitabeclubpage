@@ -76,8 +76,9 @@ var hex_type = element.find('.hexIn').attr('tag');
         // $('#email-popup').addClass('is-visible');
         switch (hex_type) { 
             case '1':
+                $('.cid-t42l8YaOiz').hide();
                 $("#popupTitle").html("Book Meet");
-                $('#hexDesc').html("We choose a 'Book Of The Month(BOTM)' every month. There are options such as basic reads for beginners and Power reads in various genres or with a specific country in mind. Members choose what they want to read. We gather on the first Saturday of each month to discuss the book and share our thoughts on it.");
+                $('#hexDesc').html("We choose a 'Book Of The Month(BOTM)' every month. There are options such as basic reads for beginners and Power read for avid readers,  in various genres or with a specific country in mind. Members choose what they want to read. We gather on the first Saturday of each month to discuss the book and share our thoughts on it.");
                 $('#hexImg').show();
                 $('#hexImg').attr("src","assets/meet/photocollage.avif")
                 $('#hexLive').hide(); 
@@ -86,14 +87,16 @@ var hex_type = element.find('.hexIn').attr('tag');
                 $('#hexButton').attr("href", "booklist.html") 
                 break;
                 case '2':
+                    $('.cid-t42l8YaOiz').hide();
                 $("#popupTitle").html("Be Inspired Or Be An Inspirer Series");
-                $('#hexDesc').html("As parents caretakers relatives, the finest present we can give to our children is our time and attention.<p>We want to encourage children to read since it opens doors to so many possibilities. As a result, we started a video series with parents reading to their children.</p>");
+                $('#hexDesc').html("As parents, caretakers, relatives the finest present we can give to our children is our time and attention.<p>We want to encourage children to read since it opens doors to so many possibilities. As a result, we started a video series with parents reading to their children.</p>");
                 $('#hexImg').show();
                 $('#hexImg').attr("src","assets/meet/inspirer.avif")
                 $('#hexLive').hide(); 
                 $('#hexButton').hide();
                 break;
                 case '3':
+                    $('.cid-t42l8YaOiz').hide();
                 $("#popupTitle").html("Crafty with Books");
                 $('#hexDesc').html("Every club meeting is either entertaining or inspiring. We aim to make it beneficial for our members as well as book discussion. Bringing creativity around is one such initiative. Where members can spend some time or express their creativity.");
                 $('#hexImg').show();
@@ -103,6 +106,7 @@ var hex_type = element.find('.hexIn').attr('tag');
                 
                 break;
                 case '4':
+                    $('.cid-t42l8YaOiz').hide();
                 $("#popupTitle").html("Power Speakers Series");
                 $('#hexDesc').html("Every club meeting is either entertaining or inspiring. We aim to make it beneficial for our members as well as book discussion. Power Speakers is one such endeavour. A guest is invited to share their own personal power tale.");
                 $('#hexImg').show();
@@ -112,6 +116,7 @@ var hex_type = element.find('.hexIn').attr('tag');
                 
                 break;
                 case '5':
+                    $('.cid-t42l8YaOiz').hide();
                 $("#popupTitle").html("Zoom Webinars");
                 $('#hexDesc').html("We didn't stop reading and discussing books even during the pandemic.Through our Zoom online meetings, we now continue our bookish discussions from the comfort of our own homes.");
                 $('#hexImg').show();
@@ -120,6 +125,7 @@ var hex_type = element.find('.hexIn').attr('tag');
                 $('#hexButton').hide();
                 break;
                 case '6':
+                    $('.cid-t42l8YaOiz').hide();
                 $("#popupTitle").html("Live with Renowned Personalities");
                 $('#hexDesc').html("We are proud of hosting speakers, filled with motivation and inspiration. They have the experience of being an author, and they share that passion to read book. We have a great group of speakers and we are constantly adding more to our wall of fame.");
                 $('#hexImg').hide();
@@ -129,6 +135,7 @@ var hex_type = element.find('.hexIn').attr('tag');
                 $('#hexButton').attr("href", "speakers.html")             
                 break;
                 case '7':
+                    $('.cid-t42l8YaOiz').hide();
                 $("#popupTitle").html("Dictionary Distribution");
                 $('#hexDesc').html("Everyone should read a book. We believe in this and have started a dictionary distribution programme for underprivileged children.");
                 $('#hexImg').show();
@@ -137,6 +144,7 @@ var hex_type = element.find('.hexIn').attr('tag');
                 $('#hexButton').hide();
                 break;
                 case '8':
+                    $('.cid-t42l8YaOiz').hide();
                 $("#popupTitle").html("Book Donation");
                 $('#hexDesc').html("Sometimes in life, you understand the joyofgiving.<p>We, through @kitabeclub and it’s members donated close to 100 books to Shivaji Maharaj PCMC School,for building their school library.</p>");
                 $('#hexImg').show();
@@ -145,7 +153,12 @@ var hex_type = element.find('.hexIn').attr('tag');
                 $('#hexButton').hide();
                 break;
                 case '9':
-                $("#popupTitle").html( "Giveaways");
+                $("#popupTitle").html( "Social media presence");
+                $('.cid-t42l8YaOiz').show();
+                $('#hexDesc').hide();
+                $('#hexLive').hide(); 
+                $('#hexButton').hide();
+                $('#hexImg').hide();
                 break;
         }
 
